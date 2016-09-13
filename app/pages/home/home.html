@@ -4,14 +4,77 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="home">
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>app/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
-</ion-content>
+<ion-slides #plansSlider [options]="sliderOptions">
+  <ion-slide *ngFor="let thing of things">
+    <!--<ion-content>-->
+      <ion-list>
+        <h2>{{thing.h}}</h2>
+        <ion-item text-wrap>
+          <p>Bacon ipsum dolor amet alcatra porchetta ribeye leberkas ham, picanha brisket kielbasa corned beef short
+            ribs beef cow andouille. Ribeye ham pancetta meatloaf. Bacon pork chop biltong pancetta kielbasa sirloin
+            corned beef ham capicola, swine cow porchetta. Tenderloin bacon cow shoulder spare ribs leberkas. Shoulder
+            cupim frankfurter tenderloin biltong short loin.</p>
+
+          <p>Spare ribs biltong leberkas fatback kevin picanha. Short ribs kevin picanha, chuck porchetta corned beef
+            ribeye hamburger. Ribeye tenderloin pancetta corned beef. Turducken corned beef cow t-bone, pancetta flank
+            spare ribs bacon. Jowl ribeye pork chop rump. Short loin strip steak alcatra short ribs pork t-bone capicola
+            fatback hamburger cupim bresaola chicken. Boudin corned beef meatball beef ribs cow biltong.</p>
+
+          <p>Meatloaf shoulder short loin fatback capicola landjaeger. Pork loin porchetta kielbasa ham hock, brisket
+            bresaola pancetta ground round. Bresaola swine meatloaf porchetta alcatra cupim beef ribeye. Picanha fatback
+            strip steak pancetta andouille beef ribs drumstick salami cow pork boudin meatball pork chop shank.</p>
+
+          <p>Pork chop tail porchetta swine picanha landjaeger, shank pancetta brisket jowl meatloaf hamburger chicken
+            jerky. Meatloaf brisket chuck short loin, capicola ball tip rump shoulder. Swine cupim beef doner chicken,
+            landjaeger shank short loin jerky bresaola pig andouille spare ribs shoulder. Bacon landjaeger shankle
+            alcatra kielbasa swine pork loin pastrami boudin chicken. Ball tip landjaeger sausage picanha. Ribeye
+            sirloin beef ribs, jowl landjaeger ham hock shankle pastrami brisket.</p>
+
+          <p>Jowl kielbasa porchetta t-bone beef turducken pork belly leberkas drumstick andouille. Sirloin jowl
+            prosciutto kevin pork belly, cupim meatloaf capicola beef ribs pork loin salami tri-tip. Swine boudin
+            picanha short loin, leberkas drumstick jowl ribeye shankle tenderloin filet mignon tongue meatloaf alcatra.
+            Ham hock filet mignon cow kevin, picanha venison spare ribs prosciutto shankle pork chop.</p>
+
+          <p>Bacon ipsum dolor amet alcatra porchetta ribeye leberkas ham, picanha brisket kielbasa corned beef short
+            ribs beef cow andouille. Ribeye ham pancetta meatloaf. Bacon pork chop biltong pancetta kielbasa sirloin
+            corned beef ham capicola, swine cow porchetta. Tenderloin bacon cow shoulder spare ribs leberkas. Shoulder
+            cupim frankfurter tenderloin biltong short loin.</p>
+
+          <p>Spare ribs biltong leberkas fatback kevin picanha. Short ribs kevin picanha, chuck porchetta corned beef
+            ribeye hamburger. Ribeye tenderloin pancetta corned beef. Turducken corned beef cow t-bone, pancetta flank
+            spare ribs bacon. Jowl ribeye pork chop rump. Short loin strip steak alcatra short ribs pork t-bone capicola
+            fatback hamburger cupim bresaola chicken. Boudin corned beef meatball beef ribs cow biltong.</p>
+
+          <p>Meatloaf shoulder short loin fatback capicola landjaeger. Pork loin porchetta kielbasa ham hock, brisket
+            bresaola pancetta ground round. Bresaola swine meatloaf porchetta alcatra cupim beef ribeye. Picanha fatback
+            strip steak pancetta andouille beef ribs drumstick salami cow pork boudin meatball pork chop shank.</p>
+
+          <p>Pork chop tail porchetta swine picanha landjaeger, shank pancetta brisket jowl meatloaf hamburger chicken
+            jerky. Meatloaf brisket chuck short loin, capicola ball tip rump shoulder. Swine cupim beef doner chicken,
+            landjaeger shank short loin jerky bresaola pig andouille spare ribs shoulder. Bacon landjaeger shankle
+            alcatra kielbasa swine pork loin pastrami boudin chicken. Ball tip landjaeger sausage picanha. Ribeye
+            sirloin beef ribs, jowl landjaeger ham hock shankle pastrami brisket.</p>
+
+          <p>Jowl kielbasa porchetta t-bone beef turducken pork belly leberkas drumstick andouille. Sirloin jowl
+            prosciutto kevin pork belly, cupim meatloaf capicola beef ribs pork loin salami tri-tip. Swine boudin
+            picanha short loin, leberkas drumstick jowl ribeye shankle tenderloin filet mignon tongue meatloaf alcatra.
+            Ham hock filet mignon cow kevin, picanha venison spare ribs prosciutto shankle pork chop.</p>
+        </ion-item>
+      </ion-list>
+    <!--</ion-content>-->
+  </ion-slide>
+</ion-slides>
+<ion-footer padding>
+  <button block large>footer button</button>
+</ion-footer>
+
+
+<!--<ion-content>-->
+<!--<ion-slides #plansSlider [options]="sliderOptions">-->
+<!--<ion-slide *ngFor="let thing of things">-->
+<!--<ion-list>-->
+<!--...-->
+<!--</ion-list>-->
+<!--</ion-slide>-->
+<!--</ion-slides>-->
+<!--</ion-content>-->

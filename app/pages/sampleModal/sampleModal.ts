@@ -6,12 +6,11 @@ import {SampleService} from "../../sampleService";
   templateUrl: 'build/pages/sampleModal/sampleModal.html'
 })
 export class SampleModal {
-  constructor(private navCtrl: NavController,
-              private sampleService: SampleService) {
+  constructor(private navCtrl: NavController) {
 
   }
 
   testMethod() {
-    return this.sampleService.testMethod();
+    console.log('test method');
   }
 }
